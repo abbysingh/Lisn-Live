@@ -1,0 +1,116 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="utf-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1.0, user-scalable=no" />
+	<meta name="handFriendly" content="true" />
+	<link rel = stylesheet href = 'widget.css' type = 'text/css'>
+	<link rel = stylesheet href = 'fonts/stylesheet.css' type = 'text/css' charset="utf-8"> <!-- fonts -->
+	<script src = 'widget.js'> </script>
+	<script src= 'https://ajax.googleapis.com/ajax/libs/jquery/1.12.4/jquery.min.js'></script>
+	<title> Lisn Widget </title>
+</head>
+
+<body>
+<div class = 'widget'>
+	<div class = 'widgetHeader'>
+		<ul>
+			<li class = 'widgetInfo'> 
+				<div class = 'participant' id = 'participantOne'> 
+					<img src="participantOne.png">
+				</div>
+
+				<div class = 'participant' id = 'participantTwo'>
+					<img src="participantTwo.png">
+				</div>
+
+				<div class = 'lisnSesh'> lisn sesh </div>
+				<div class = 'numberOfTracks'> 24 tracks </div>
+			</li>
+
+			<li class = 'downloadLink'> <a href = '#'> get the app </a> </li>
+		</ul>
+	</div>
+
+	<div class = 'trackListContainer'>
+	<ul class = 'trackList'>
+		<li class = 'artworkContainer' id = 'firstContainer'>
+			<div class = 'streamingService'> <a href = '#'> <img src='spotify.svg'> </a> </div>
+			<div class = 'albumArt'> <img src = 'albumArt.jpg'> </div>
+			<div class = 'playButton' 
+				id = 'play0' 
+				onclick = "playClick($(this).parent().index())"> 
+				<img src = 'playButton.svg'>
+			</div>
+			<div class = 'pauseButton' 
+				id = 'pause0'
+				onclick = "pauseClick($(this).parent().index())">
+				<img src = 'pause.svg'>
+			</div>
+			<div class = 'artworkGradient'> </div>
+			<div class = 'trackTitle'> Track Title </div>
+			<div class = 'artistName'> Artist Name </div>
+			<audio id = 'preview0' src = 'preview.mp3' onended = 'playNext( $(this).parent().index() )''> </audio>
+		</li>
+
+		<li class = 'artworkContainer'>
+			<div class = 'streamingService'> <a href = '#'> <img src='spotify.svg'> </a> </div>
+			<div class = 'albumArt'> <img src = 'albumArt.jpg'> </div>
+			<div class = 'playButton' 
+				id = 'play1'
+				onclick = "playClick($(this).parent().index())"> 
+				<img src = 'playButton.svg'> 
+			</div>
+			<div class = 'pauseButton' 
+				id = 'pause1'
+				onclick = "pauseClick($(this).parent().index())">
+				<img src = 'pause.svg'>
+			</div>
+			<div class = 'artworkGradient'> </div>
+			<div class = 'trackTitle'> Track Title </div>
+			<div class = 'artistName'> Artist Name </div>
+			<audio id = 'preview1' src = 'preview.mp3' onended = 'playNext( $(this).parent().index() )'> </audio>
+		</li>
+
+		<li class = 'artworkContainer'>
+			<div class = 'streamingService'> <a href = '#'> <img src='spotify.svg'> </a> </div>
+			<div class = 'albumArt'> <img src = 'albumArt.jpg'> </div>
+			<div class = 'playButton' 
+				id = 'play2' 
+				onclick = "playClick($(this).parent().index())"> 
+				<img src = 'playButton.svg'> 
+			</div>
+			<div class = 'pauseButton' 
+				id = 'pause2'
+				onclick = "pauseClick($(this).parent().index())">
+				<img src = 'pause.svg'>
+			</div>
+			<div class = 'artworkGradient'> </div>
+			<div class = 'trackTitle'> Track Title </div>
+			<div class = 'artistName'> Artist Name </div>
+			<audio id = 'preview2' src = 'preview.mp3' onended = 'playNext( $(this).parent().index() )'> </audio>
+		</li>
+
+		<li class = 'artworkContainer'>
+			<div class = 'streamingService'> <a href = '#'> <img src='spotify.svg'> </a> </div>
+			<div class = 'albumArt'> <img src = 'albumArt.jpg'> </div>
+			<div class = 'playButton' 
+				id = 'play3' 
+				onclick = "playClick($(this).parent().index())"> 
+				<img src = 'playButton.svg'> 
+			</div>
+			<div class = 'pauseButton' 
+				id = 'pause3'
+				onclick = "pauseClick($(this).parent().index())">
+				<img src = 'pause.svg'>
+			</div>
+			<div class = 'artworkGradient'> </div>
+			<div class = 'trackTitle'> Track Title </div>
+			<div class = 'artistName'> Artist Name </div>
+			<audio id = 'preview3' src = 'preview.mp3' onended = 'playNext( $(this).parent().index() )'> </audio>
+		</li>
+	</ul>
+	</div>
+</body>
+</html>
+
