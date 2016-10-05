@@ -15,102 +15,98 @@
 <div class = 'widget'>
 	<div class = 'widgetHeader'>
 		<ul>
-			<li class = 'widgetInfo'> 
-				<div class = 'participant' id = 'participantOne'> 
+			<li class = 'widgetInfo'>
+				<div class = 'participant' id = 'participantOne'>
 					<img src="participantOne.png">
 				</div>
 
-				<div class = 'participant' id = 'participantTwo'>
-					<img src="participantTwo.png">
-				</div>
 
-				<div class = 'lisnSesh'> lisn sesh </div>
-				<div class = 'numberOfTracks'> 24 tracks </div>
+				<div class = 'lisnSesh'> ThisNewBand Weekly #31 </div>
+				<div class = 'numberOfTracks'> 4 tracks </div>
 			</li>
 
-			<li class = 'downloadLink'> <a href = '#'> get the app </a> </li>
+			<li class = 'downloadLink'> <a href = 'http://lisn.xyz'> get the app </a> </li>
 		</ul>
 	</div>
 
 	<div class = 'trackListContainer'>
 	<ul class = 'trackList'>
 		<li class = 'artworkContainer' id = 'firstContainer'>
-			<div class = 'streamingService'> <a href = '#'> <img src='spotify.svg'> </a> </div>
-			<div class = 'albumArt'> <img src = 'albumArt.jpg'> </div>
-			<div class = 'playButton' 
-				id = 'play0' 
-				onclick = "playClick($(this).parent().index())"> 
+			<div class = 'streamingService'> <a href = '#'> <img src='soundcloud.svg'> </a> </div>
+			<div class = 'albumArt'> <img src = 'one.jpg'> </div>
+			<div class = 'playButton'
+				id = 'play0'
+				onclick = "playClick($(this).parent().index())">
 				<img src = 'playButton.svg'>
 			</div>
-			<div class = 'pauseButton' 
+			<div class = 'pauseButton'
 				id = 'pause0'
 				onclick = "pauseClick($(this).parent().index())">
 				<img src = 'pause.svg'>
 			</div>
 			<div class = 'artworkGradient'> </div>
-			<div class = 'trackTitle'> Track Title </div>
-			<div class = 'artistName'> Artist Name </div>
-			<audio id = 'preview0' src = 'preview.mp3' onended = 'playNext( $(this).parent().index() )''> </audio>
+			<div class = 'trackTitle'> Belle Wahallah </div>
+			<div class = 'artistName'> Kondi Band </div>
+			<audio id = 'preview0' src = 'https://api.soundcloud.com/tracks/259892160/stream?client_id=4710af803283a0f5507c4b2ad670e778' onended = 'playNext( $(this).parent().index() )''> </audio>
 		</li>
 
 		<li class = 'artworkContainer'>
-			<div class = 'streamingService'> <a href = '#'> <img src='spotify.svg'> </a> </div>
-			<div class = 'albumArt'> <img src = 'albumArt.jpg'> </div>
-			<div class = 'playButton' 
+			<div class = 'streamingService'> <a href = '#'> <img src='soundcloud.svg'> </a> </div>
+			<div class = 'albumArt'> <img src = 'two.jpg'> </div>
+			<div class = 'playButton'
 				id = 'play1'
-				onclick = "playClick($(this).parent().index())"> 
-				<img src = 'playButton.svg'> 
+				onclick = "playClick($(this).parent().index())">
+				<img src = 'playButton.svg'>
 			</div>
-			<div class = 'pauseButton' 
+			<div class = 'pauseButton'
 				id = 'pause1'
 				onclick = "pauseClick($(this).parent().index())">
 				<img src = 'pause.svg'>
 			</div>
 			<div class = 'artworkGradient'> </div>
-			<div class = 'trackTitle'> Track Title </div>
-			<div class = 'artistName'> Artist Name </div>
-			<audio id = 'preview1' src = 'preview.mp3' onended = 'playNext( $(this).parent().index() )'> </audio>
+			<div class = 'trackTitle'> a digital love </div>
+			<div class = 'artistName'> whereisalex </div>
+			<audio id = 'preview1' src = 'https://api.soundcloud.com/tracks/264797771/stream?client_id=4710af803283a0f5507c4b2ad670e778' onended = 'playNext( $(this).parent().index() )'> </audio>
 		</li>
 
 		<li class = 'artworkContainer'>
-			<div class = 'streamingService'> <a href = '#'> <img src='spotify.svg'> </a> </div>
-			<div class = 'albumArt'> <img src = 'albumArt.jpg'> </div>
-			<div class = 'playButton' 
-				id = 'play2' 
-				onclick = "playClick($(this).parent().index())"> 
-				<img src = 'playButton.svg'> 
+			<div class = 'streamingService'> <a href = '#'> <img src='soundcloud.svg'> </a> </div>
+			<div class = 'albumArt'> <img src = 'three.jpg'> </div>
+			<div class = 'playButton'
+				id = 'play2'
+				onclick = "playClick($(this).parent().index())">
+				<img src = 'playButton.svg'>
 			</div>
-			<div class = 'pauseButton' 
+			<div class = 'pauseButton'
 				id = 'pause2'
 				onclick = "pauseClick($(this).parent().index())">
 				<img src = 'pause.svg'>
 			</div>
 			<div class = 'artworkGradient'> </div>
-			<div class = 'trackTitle'> Track Title </div>
-			<div class = 'artistName'> Artist Name </div>
-			<audio id = 'preview2' src = 'preview.mp3' onended = 'playNext( $(this).parent().index() )'> </audio>
+			<div class = 'trackTitle'> Come to LA </div>
+			<div class = 'artistName'> Pretty Sister </div>
+			<audio id = 'preview2' src = 'https://api.soundcloud.com/tracks/252509029/stream?client_id=4710af803283a0f5507c4b2ad670e778' onended = 'playNext( $(this).parent().index() )'> </audio>
 		</li>
 
 		<li class = 'artworkContainer'>
-			<div class = 'streamingService'> <a href = '#'> <img src='spotify.svg'> </a> </div>
-			<div class = 'albumArt'> <img src = 'albumArt.jpg'> </div>
-			<div class = 'playButton' 
-				id = 'play3' 
-				onclick = "playClick($(this).parent().index())"> 
-				<img src = 'playButton.svg'> 
+			<div class = 'streamingService'> <a href = '#'> <img src='soundcloud.svg'> </a> </div>
+			<div class = 'albumArt'> <img src = 'four.jpg'> </div>
+			<div class = 'playButton'
+				id = 'play3'
+				onclick = "playClick($(this).parent().index())">
+				<img src = 'playButton.svg'>
 			</div>
-			<div class = 'pauseButton' 
+			<div class = 'pauseButton'
 				id = 'pause3'
 				onclick = "pauseClick($(this).parent().index())">
 				<img src = 'pause.svg'>
 			</div>
 			<div class = 'artworkGradient'> </div>
-			<div class = 'trackTitle'> Track Title </div>
-			<div class = 'artistName'> Artist Name </div>
-			<audio id = 'preview3' src = 'preview.mp3' onended = 'playNext( $(this).parent().index() )'> </audio>
+			<div class = 'trackTitle'>Fründin</div>
+			<div class = 'artistName'> Philipp Albrecht </div>
+			<audio id = 'preview3' src = 'https://api.soundcloud.com/tracks/152081091/stream?client_id=4710af803283a0f5507c4b2ad670e778' onended = 'playNext( $(this).parent().index() )'> </audio>
 		</li>
 	</ul>
 	</div>
 </body>
 </html>
-
